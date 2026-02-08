@@ -1,0 +1,8 @@
+{
+    "name": "MyFixes",
+    "version": "1.0.0",
+    "title": "Meine BZ und SE Anpassungen",
+    "author": "Enjoyer",
+    "factorio_version": "2.0",
+    "dependencies": ["base", "sei-electromagnetic-plant", "bzsilicon2"]
+}
