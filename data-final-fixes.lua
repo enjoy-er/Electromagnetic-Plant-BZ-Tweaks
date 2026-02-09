@@ -1,17 +1,14 @@
--- Wir holen uns die Library der anderen Mod, um deren schlaue Funktion zu nutzen
 local data_util = require("__sei-library__.data_util")
 
--- 1. Deine Liste mit den BZ-Rezepten
 local my_extra_recipes = {
     "gyro",
     "silicon-wafer",
     "solar-cell"
 }
--- 2. Die Funktion der Original-Mod aufrufen
--- Das fügt "electromagnetics" hinzu, lässt aber "advanced-crafting" etc. beim Rezept aktiv!
+
 data_util.add_additional_category_to_recipes("electromagnetics", my_extra_recipes)
 
--- 3. DEIN LUBRICANT-FIX (Silikon entfernen)
+
 local function remove_silicone(recipe)
     if not recipe or not recipe.ingredients then return end
     local ingredients = recipe.ingredients
